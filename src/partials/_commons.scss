@@ -1,7 +1,6 @@
 // mixin class
 @mixin d-flex-space {
     display: flex;
-    justify-content: space-between;
 }
 @mixin list-style-none {
     list-style-type: none;

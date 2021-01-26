@@ -1,0 +1,30 @@
+#banner{
+    @include d-flex-space;
+    padding-top: 3rem;
+    width: 80%;
+    margin: auto;
+    .info_banner{
+        width: 50%;
+        border: 1px solid $color;
+        // title
+        h1{
+            font-size: 4rem;
+            font-weight: 500;
+        }
+        .sign_banner{
+            button{
+                @include d-flex-space;
+                img{
+                    @include img-button;
+                }
+            }
+            
+        }
+    }
+    .img_banner{
+        width: calc(100% - 50%);
+        img{
+            width: 100%;
+        }
+    }
+}

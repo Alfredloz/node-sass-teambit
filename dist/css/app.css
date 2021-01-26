@@ -9,11 +9,12 @@
 /* Import partials*/
 #header_nav {
   display: flex;
-  justify-content: space-between;
   color: red;
   padding-top: 1rem;
   border-bottom: 1px solid black;
-  margin: 0 20%;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
 }
 #header_nav ul {
   display: flex;
@@ -26,7 +27,6 @@
 }
 #header_nav ul button {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 2px 5px;
   margin-bottom: 5px;
@@ -52,4 +52,33 @@
 
 #logo span {
   color: red;
+}
+
+#banner {
+  display: flex;
+  padding-top: 3rem;
+  width: 80%;
+  margin: auto;
+}
+#banner .info_banner {
+  width: 50%;
+  border: 1px solid red;
+}
+#banner .info_banner h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+#banner .info_banner .sign_banner button {
+  display: flex;
+}
+#banner .info_banner .sign_banner button img {
+  width: 20px;
+  height: 20px;
+  padding: 1px;
+}
+#banner .img_banner {
+  width: calc(100% - 50%);
+}
+#banner .img_banner img {
+  width: 100%;
 }
