@@ -5,8 +5,9 @@
   box-sizing: border-box;
 }
 /* general settings */
-/* utility classes */
-.d_flex{
-  display: flex;
-}
-/* /utility classes */
+/* Import partials*/
+@import "../partials/commons";
+@import "../partials/palette-colours";
+@import "../partials/header"
+// /* /Import partials*/
+

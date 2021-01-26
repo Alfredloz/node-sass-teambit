@@ -6,9 +6,50 @@
 }
 
 /* general settings */
-/* utility classes */
-.d_flex {
+/* Import partials*/
+#header_nav {
   display: flex;
+  justify-content: space-between;
+  color: red;
+  padding-top: 1rem;
+  border-bottom: 1px solid black;
+  margin: 0 20%;
+}
+#header_nav ul {
+  display: flex;
+  color: red;
+  align-items: center;
+  list-style-type: none;
+}
+#header_nav ul li {
+  padding: 0 1rem;
+}
+#header_nav ul button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+#header_nav ul button:focus {
+  outline: none;
+}
+#header_nav ul button:hover {
+  cursor: pointer;
+}
+#header_nav ul button:active {
+  position: relative;
+  top: 1px;
+}
+#header_nav ul button img {
+  width: 20px;
+  height: 20px;
+  padding: 1px;
 }
 
-/* /utility classes */
+#logo span {
+  color: red;
+}
