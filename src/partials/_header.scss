@@ -1,17 +1,19 @@
 // header id 
 #header_nav{
     @include d-flex-space;
+    @include width-center;
     color: $color;
     padding-top: 1rem;
     border-bottom: 1px solid black;
-    width: 80%;
-    margin: auto;
     justify-content: space-between;
     ul{
       display: flex;
       color: $color;
       align-items: center;
       @include list-style-none;
+      @media screen and (max-width: $tablet-max){
+        display: none;
+      }
         
       li{
         padding: 0 1rem;
@@ -19,22 +21,26 @@
     //   bottone dex navbar
       button{
         @include d-flex-space;
-        align-items: center;
-        padding: 2px 5px;
-        margin-bottom: 5px;
+        @include button-focus-hover;
         background-color: white;
         border: 1px solid black;
-        border-radius: 4px;
-        @include button-focus-hover;
           img{
              @include img-button; 
           }
       }
     }
+    .hamburger{
+      font-size: 2rem;
+      display: none;
+      @media screen and (max-width: $tablet-max){
+        display: block;
+      }
+    }
+    
   }
-  #logo{
+#logo{
      
     span{
       color: $color;
     }
-  }
+}

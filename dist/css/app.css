@@ -5,15 +5,20 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+}
+
 /* general settings */
 /* Import partials*/
 #header_nav {
   display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
   color: red;
   padding-top: 1rem;
   border-bottom: 1px solid black;
-  width: 80%;
-  margin: auto;
   justify-content: space-between;
 }
 #header_nav ul {
@@ -22,17 +27,24 @@
   align-items: center;
   list-style-type: none;
 }
+@media screen and (max-width: 998px) {
+  #header_nav ul {
+    display: none;
+  }
+}
 #header_nav ul li {
   padding: 0 1rem;
 }
 #header_nav ul button {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 2px 5px;
   margin-bottom: 5px;
+  border-radius: 4px;
+  border: none;
   background-color: white;
   border: 1px solid black;
-  border-radius: 4px;
 }
 #header_nav ul button:focus {
   outline: none;
@@ -49,6 +61,15 @@
   height: 20px;
   padding: 1px;
 }
+#header_nav .hamburger {
+  font-size: 2rem;
+  display: none;
+}
+@media screen and (max-width: 998px) {
+  #header_nav .hamburger {
+    display: block;
+  }
+}
 
 #logo span {
   color: red;
@@ -56,20 +77,65 @@
 
 #banner {
   display: flex;
-  padding-top: 3rem;
-  width: 80%;
+  flex-wrap: wrap;
   margin: auto;
+  width: 80%;
+  padding-top: 3rem;
 }
 #banner .info_banner {
   width: 50%;
-  border: 1px solid red;
+}
+@media screen and (max-width: 998px) {
+  #banner .info_banner {
+    width: 100%;
+    height: 20rem;
+  }
+  #banner .info_banner h1 {
+    text-align: center;
+  }
+  #banner .info_banner p {
+    text-align: center;
+  }
 }
 #banner .info_banner h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
+}
+#banner .info_banner p {
+  line-height: 2rem;
+  padding: 1rem 0;
+}
+#banner .info_banner .sign_banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media screen and (max-width: 998px) {
+  #banner .info_banner .sign_banner {
+    justify-content: center;
+  }
 }
 #banner .info_banner .sign_banner button {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2px 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: none;
+  background-color: #21347f;
+  color: white;
+  width: 10rem;
+}
+#banner .info_banner .sign_banner button:focus {
+  outline: none;
+}
+#banner .info_banner .sign_banner button:hover {
+  cursor: pointer;
+}
+#banner .info_banner .sign_banner button:active {
+  position: relative;
+  top: 1px;
 }
 #banner .info_banner .sign_banner button img {
   width: 20px;
@@ -77,8 +143,22 @@
   padding: 1px;
 }
 #banner .img_banner {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
   width: calc(100% - 50%);
+  height: 100%;
+}
+@media screen and (max-width: 998px) {
+  #banner .img_banner {
+    width: 100%;
+  }
 }
 #banner .img_banner img {
   width: 100%;
+}
+
+.business_explain {
+  background-color: #fee1c7;
+  height: 50rem;
 }
