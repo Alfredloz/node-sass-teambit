@@ -160,5 +160,44 @@ body {
 
 .business_explain {
   background-color: #fee1c7;
-  height: 50rem;
+}
+.business_explain h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 2rem;
+  width: 80%;
+  margin: auto;
+}
+.business_explain .images_business {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.business_explain img {
+  height: 25rem;
+  width: auto;
+  display: block;
+  margin: auto;
+  padding: 2rem 0;
+}
+.business_explain .card {
+  padding-top: 3rem;
+  margin: 1rem;
+  width: 25rem;
+}
+@media screen and (max-width: 998px) {
+  .business_explain .card {
+    width: 30rem;
+  }
+}
+.business_explain .card img {
+  display: block;
+  height: 10rem;
+  width: auto;
+  margin: auto;
+}
+.business_explain hr {
+  width: 80%;
+  margin: auto;
 }

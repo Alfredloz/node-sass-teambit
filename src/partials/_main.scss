@@ -59,8 +59,41 @@
         }
     }
 }
+// business section
 .business_explain{
     background-color: $background;
-    height: 50rem;
-    // width: auto;
+    
+    h2{
+        @include big-title;
+        width: 80%;
+        margin: auto;
+    }
+    .images_business{
+        @include d-flex-space;
+        justify-content: center;
+    }
+    img{
+        @include alone-img;
+        padding: 2rem 0;
+    }
+    .card{
+       
+        padding-top: 3rem;
+        margin: 1rem;
+        width: 25rem;
+        @media screen and (max-width: $tablet-max){
+            width: 30rem;
+        }
+        img{
+            display: block;
+            height: 10rem;
+            width: auto;
+            margin: auto;
+        }
+    }
+    hr{
+        width: 80%;
+        margin: auto;
+    }
 }
+// /business section

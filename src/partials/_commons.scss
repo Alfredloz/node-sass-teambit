@@ -40,3 +40,19 @@
     $tablet-max: 998px;
     $desktop: 999px;
 // / media queries variables
+// title
+@mixin big-title { 
+   font-size: 2rem;
+   font-weight: 400;
+   text-align: center;
+   padding-top: 2rem; 
+}
+// / title
+// alone img
+@mixin alone-img {
+    height: 25rem;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+// /alone img
