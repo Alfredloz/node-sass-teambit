@@ -2,13 +2,11 @@
 #header_nav{
     @include d-flex-space;
     @include width-center;
-    color: $color;
     padding-top: 1rem;
     border-bottom: 1px solid black;
     justify-content: space-between;
     ul{
       display: flex;
-      color: $color;
       align-items: center;
       @include list-style-none;
       @media screen and (max-width: $tablet-max){
@@ -32,8 +30,10 @@
     .hamburger{
       font-size: 2rem;
       display: none;
+      
       @media screen and (max-width: $tablet-max){
         display: block;
+        
       }
     }
     

@@ -61,7 +61,7 @@
 }
 // business section
 .business_explain{
-    background-color: $background;
+    background-color: $bg-light-blue;
     
     h2{
         @include big-title;
@@ -90,10 +90,15 @@
             width: auto;
             margin: auto;
         }
+        p{
+            text-align: center;
+        }
     }
-    hr{
+    .separator{
         width: 80%;
         margin: auto;
+        border-bottom: 1px solid black;
+        // border: .1rem solid black;
     }
 }
 // /business section
